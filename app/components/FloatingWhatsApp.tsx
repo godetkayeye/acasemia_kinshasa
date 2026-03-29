@@ -3,8 +3,7 @@
 import Link from 'next/link';
 
 export default function FloatingWhatsApp() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+  const whatsappUrl = 'https://wa.me/243812331938';
 
   return (
     <Link

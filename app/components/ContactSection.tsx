@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AnimateOnScroll } from './AnimateOnScroll';
 
 export default function ContactSection() {
-  const restaurantName = process.env.NEXT_PUBLIC_RESTAURANT_NAME;
-  const restaurantPhone = process.env.NEXT_PUBLIC_RESTAURANT_PHONE;
-  const restaurantAddress = process.env.NEXT_PUBLIC_RESTAURANT_ADDRESS;
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const restaurantName = 'A Casa Mia';
+  const restaurantPhone = '+243 812 331 938';
+  const restaurantAddress = '70B Avenue Uvira, Gombe, Kinshasa';
+  const whatsappNumber = '243812331938';
 
   return (
     <section id="contact" className="py-20 px-6 bg-gray-800 text-white">
@@ -33,7 +33,7 @@ export default function ContactSection() {
                   <div>
                     <p className="font-semibold">Téléphone / WhatsApp</p>
                     <Link
-                      href={`https://wa.me/${whatsappNumber}`}
+                      href="https://wa.me/243812331938"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-green-400 transition-colors underline"

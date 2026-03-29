@@ -27,8 +27,7 @@ export default function ReservationSection() {
     // Format the message for WhatsApp
     const message = `Bonjour, je souhaite réserver une table.\n\nNom: ${formData.name}\nTéléphone: ${formData.phone}\nDate: ${formData.date}\nHeure: ${formData.time}\nNombre de personnes: ${formData.guests}\nMessage: ${formData.message}`;
 
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/243812331938?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, '_blank');
 
